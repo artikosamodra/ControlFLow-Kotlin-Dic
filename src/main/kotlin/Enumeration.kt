@@ -1,16 +1,12 @@
-fun main() {
-    val colors: Array<Color> = Color.values()
-    colors.forEach { color ->
-        print("$color ")
-    }
+
+fun main(){
+    val color: Color = Color.valueOf("RED")
+    println("Color is $color")
+    println("Color value is ${color.value.toString(16)}")
 }
 
-enum class Color(val value: Int) {
+enum class Color(val value: Int){
     RED(0xFF0000),
     GREEN(0x00FF00),
     BLUE(0x0000FF)
 }
-
-/*
-output : RED GREEN BLUE => merupakan nama dan objek dari enum class itu sendiri
- */
