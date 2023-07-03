@@ -1,8 +1,12 @@
-
 fun main(){
-    val color: Color = Color.valueOf("RED")
+    //cara yang lebih umum
+    val colors: Array<Color> = enumValues()
+    colors.forEach {color ->
+        println(color)
+    }
+
+    val color: Color = enumValueOf("RED")
     println("Color is $color")
-    println("Color value is ${color.value.toString(16)}")
 }
 
 enum class Color(val value: Int){
