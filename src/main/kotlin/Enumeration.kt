@@ -14,4 +14,3 @@ enum class Color(val value: Int){
     GREEN(0x00FF00),
     BLUE(0x0000FF)
 }
-
