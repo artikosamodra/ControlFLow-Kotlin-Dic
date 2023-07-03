@@ -1,12 +1,7 @@
-fun main(){
-    //cara yang lebih umum
-    val colors: Array<Color> = enumValues()
-    colors.forEach {color ->
-        println(color)
-    }
 
-    val color: Color = enumValueOf("RED")
-    println("Color is $color")
+fun main(){
+    val color: Color = Color.GREEN
+    print("Position GREEN is ${color.ordinal}")
 }
 
 enum class Color(val value: Int){
@@ -14,3 +9,4 @@ enum class Color(val value: Int){
     GREEN(0x00FF00),
     BLUE(0x0000FF)
 }
+
