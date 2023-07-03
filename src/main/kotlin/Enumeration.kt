@@ -1,7 +1,12 @@
 
 fun main(){
     val color: Color = Color.GREEN
-    print("Position GREEN is ${color.ordinal}")
+
+    when(color){
+       Color.RED -> print("Color is Red")
+       Color.GREEN -> print("Color is Green")
+       Color.BLUE -> print("Color is Blue")
+    }
 }
 
 enum class Color(val value: Int){
